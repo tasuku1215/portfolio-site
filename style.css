@@ -16,6 +16,13 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.8;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3 {
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .hero {
