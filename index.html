@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>たすく | AI自動化・Web開発ポートフォリオ</title>
+<meta name="description" content="AI自動化・業務効率化・Web開発の実績ポートフォリオ">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="細見 祐（たすく）| AI自動化・Web開発ポートフォリオ">
+<meta property="og:description" content="Webエンジニア出身。AIを使った自動化・業務効率化の実績を紹介します。">
+<meta property="og:image" content="favicon.svg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="細見 祐（たすく）| AI自動化・Web開発ポートフォリオ">
+<meta name="twitter:description" content="Webエンジニア出身。AIを使った自動化・業務効率化の実績を紹介します。">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Portfolio</p>
+    <h1>細見 祐（たすく）</h1>
+    <p class="tagline">Webエンジニア出身・AIを使った自動化と業務効率化で、小さく速く成果を出します</p>
+    <a href="#contact" class="btn">問い合わせる</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="section" id="about">
+    <h2>自己紹介</h2>
+    <p class="lead">
+      Webエンジニアとして約3年8ヶ月、PHP・Laravel・JavaScript・MySQLを用いた業務システムの開発・保守に従事。
+      既存システムの仕様調査、不具合の原因切り分け、影響範囲を確認しながらの安全な修正対応を通じて、
+      確実に進める開発スタイルを身につけました。
+    </p>
+    <p class="lead">
+      直近ではClaude Code・ChatGPT・n8nなどのAIツールを活用した業務効率化・自動化環境の構築を個人で進めており、
+      Playwrightによるブラウザ操作自動化やPython×AIエージェント連携による業務フロー自動化を実装しています。
+      「時間がかかっている繰り返し作業をAIで自動化したい」という相談に対し、小さく試作して素早く動くものを出すスタイルで進めます。
+    </p>
+  </section>
+
+  <section class="section" id="career">
+    <h2>職歴・学歴</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <p class="timeline-date">2025年5月 〜 現在</p>
+        <h3>個人開発・自主検証（フリーランス独立準備中）</h3>
+        <p>Playwrightによるブラウザ操作自動化、Python×AIエージェント（Claude API・Ollama）連携の業務フロー自動化、n8nでの通知・定期処理・Gmail連携ワークフロー構築、Notion/Obsidianでのナレッジ・タスク管理基盤構築などを実施。</p>
+      </div>
+      <div class="timeline-item">
+        <p class="timeline-date">2021年9月 〜 2025年5月</p>
+        <h3>株式会社アドグローブ｜システムエンジニア</h3>
+        <p>PHP/Laravelを中心としたWebアプリケーションの開発・保守を担当。既存コードの調査・仕様確認、機能修正・軽微な追加開発、JavaScript/HTML/CSSでの画面修正、MySQLでのデータ確認、不具合調査から修正・テストまで一貫して対応。Gitによるソース管理・コードレビューにも従事。</p>
+      </div>
+      <div class="timeline-item">
+        <p class="timeline-date">2017年4月 〜 2021年3月</p>
+        <h3>専門学校 HAL東京｜高度情報学科 WEB開発コース</h3>
+        <p>Web開発の基礎から応用までを専門的に学習し卒業。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="works">
+    <h2>実績</h2>
+    <div class="cards">
+
+      <article class="card">
+        <h3>営業支援AIエージェント（eigyo-agent）</h3>
+        <p class="card-label">課題</p>
+        <p>案件探し・応募文作成・進捗管理を手作業でやると時間がかかり、応募数が伸びない。</p>
+        <p class="card-label">やったこと</p>
+        <p>案件取得→スコアリング→応募文自動生成→半自動応募までを一気通貫で自動化するシステムを自作。</p>
+        <p class="card-label">結果</p>
+        <p>複数案件への応募を短時間で継続的に実施できる体制を構築。</p>
+      </article>
+
+      <article class="card">
+        <h3>DBD Viewer（動画ビューアアプリ）</h3>
+        <p class="card-label">課題</p>
+        <p>動画コンテンツを快適に閲覧・整理できるツールが欲しかった。</p>
+        <p class="card-label">やったこと</p>
+        <p>React / Zustandで状態管理を行うフロントエンドを構築し、YouTube IFrame APIとの連携やモバイル対応を実装。</p>
+        <p class="card-label">結果</p>
+        <p>PC・モバイル双方で安定動作するビューアを完成させ、実運用中。</p>
+      </article>
+
+      <article class="card">
+        <h3>VRCアバター改変</h3>
+        <p class="card-label">課題</p>
+        <p>既製アバター（Manuka）を、要望に合わせた見た目・ギミックにカスタマイズしたい。</p>
+        <p class="card-label">やったこと</p>
+        <p>Unity上でのシェーダー調整、ギミック追加、Write Defaults混在によるレイトジョイナー不具合の原因特定と修正などを実施。</p>
+        <p class="card-label">結果</p>
+        <p>安定して動作するオリジナル改変アバターを完成・運用。</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <h2>スキル</h2>
+    <ul class="tags">
+      <li>PHP / Laravel</li>
+      <li>JavaScript / jQuery</li>
+      <li>HTML / CSS</li>
+      <li>MySQL / SQL</li>
+      <li>Python</li>
+      <li>Playwright</li>
+      <li>Claude Code / ChatGPT / n8n</li>
+      <li>React / Zustand</li>
+      <li>Git / GitHub / Docker</li>
+      <li>Notion / Obsidian運用設計</li>
+      <li>Unity / VRChat改変</li>
+    </ul>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>連絡先</h2>
+    <p>お仕事のご相談はこちらまでお気軽にどうぞ。</p>
+    <a class="btn" href="mailto:tasuku1215mhg@gmail.com">tasuku1215mhg@gmail.com</a>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Tasuku. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
