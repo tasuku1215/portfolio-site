@@ -53,6 +53,13 @@ h1, h2, h3 {
   color: transparent;
 }
 
+.name-en {
+  font-size: 15px;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  margin: -8px 0 24px;
+}
+
 .tagline {
   color: var(--muted);
   font-size: clamp(16px, 2.5vw, 19px);
@@ -109,6 +116,16 @@ main {
   max-width: 680px;
   font-size: 16px;
 }
+
+.subsection {
+  font-size: 15px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 32px 0 16px;
+}
+
+.subsection:first-of-type { margin-top: 0; }
 
 .cards {
   display: grid;
