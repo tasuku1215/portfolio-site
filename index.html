@@ -3,99 +3,140 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>細見 祐（Hosomi Tasuku）| PHP・Laravel・AI活用ポートフォリオ</title>
-<meta name="description" content="PHP・Laravelを中心としたWeb開発と、AIを活用した業務効率化・個人開発のポートフォリオ">
+<title>細見 祐（Hosomi Tasuku）| Web開発・AI活用ポートフォリオ</title>
+<meta name="description" content="PHP・Laravelでの業務システム開発・保守の実務経験と、Claude Code・ローカルLLM・n8nを使ったAI駆動開発・業務自動化の個人開発を紹介します。">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="細見 祐（Hosomi Tasuku）| PHP・Laravel・AI活用ポートフォリオ">
-<meta property="og:description" content="PHP・Laravelの実務経験と、AIを使った自動化・業務効率化の個人開発を紹介します。">
+<meta property="og:url" content="https://tasuku1215.github.io/portfolio-site/">
+<meta property="og:title" content="細見 祐（Hosomi Tasuku）| Web開発・AI活用ポートフォリオ">
+<meta property="og:description" content="PHP・Laravelの実務経験と、AIエージェント・ローカルLLM・自動化基盤の個人開発を紹介します。">
 <meta property="og:image" content="https://tasuku1215.github.io/portfolio-site/ogp.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://tasuku1215.github.io/portfolio-site/ogp.png">
-<meta name="twitter:title" content="細見 祐（Hosomi Tasuku）| PHP・Laravel・AI活用ポートフォリオ">
-<meta name="twitter:description" content="PHP・Laravelの実務経験と、AIを使った自動化・業務効率化の個人開発を紹介します。">
+<meta name="twitter:title" content="細見 祐（Hosomi Tasuku）| Web開発・AI活用ポートフォリオ">
+<meta name="twitter:description" content="PHP・Laravelの実務経験と、AIエージェント・ローカルLLM・自動化基盤の個人開発を紹介します。">
 
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">本文へ移動</a>
+
+<nav class="nav" aria-label="ページ内リンク">
+  <a href="#about">自己紹介</a>
+  <a href="#strengths">強み</a>
+  <a href="#services">ご相談できること</a>
+  <a href="#works">実績</a>
+  <a href="#career">経歴</a>
+  <a href="#skills">スキル</a>
+  <a href="#contact">連絡先</a>
+</nav>
 
 <header class="hero">
   <div class="hero-inner">
     <p class="eyebrow">Portfolio</p>
     <h1>細見 祐</h1>
     <p class="name-en">Hosomi Tasuku</p>
-    <p class="tagline">PHP・Laravelの実務経験を軸に、AIを活用しながら安全で保守しやすいWeb開発に取り組みます</p>
+    <p class="tagline">Web開発の経験を、<br class="br-pc">日々の業務を楽にする仕組みへ。</p>
+    <ul class="facts">
+      <li><strong>約3年8ヶ月</strong><span>Web開発の実務経験</span></li>
+      <li><strong>PHP / Laravel</strong><span>開発・保守・改修</span></li>
+      <li><strong>AI・自動化</strong><span>個人開発・自主検証で活用</span></li>
+    </ul>
     <div class="actions">
-      <a href="#contact" class="btn">問い合わせる</a>
-      <a href="https://github.com/tasuku1215" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+      <a href="#works" class="btn">実績を見る</a>
+      <a href="#contact" class="btn btn-secondary">連絡する</a>
     </div>
   </div>
 </header>
 
-<main>
+<main id="main">
 
   <section class="section" id="about">
     <h2>自己紹介</h2>
-    <p class="lead">
-      Webエンジニアとして約3年8ヶ月、PHP・Laravel・JavaScript・MySQLを用いた業務システムの開発・保守に従事。
-      社内約5名・クライアント側約5名の体制で、要件や仕様の確認から設計、実装、テスト、運用保守まで一貫して対応しました。
-      既存システムの仕様調査、不具合の原因切り分け、影響範囲を確認しながらの安全な修正対応を通じて、
-      確実に進める開発スタイルを身につけました。
-    </p>
-    <p class="lead">
-      直近ではClaude Code・ChatGPT・n8nなどのAIツールを活用した業務効率化・自動化環境の構築を個人で進めており、
-      Playwrightによるブラウザ操作自動化やPython×AIエージェント連携による業務フロー自動化を実装しています。
-      「時間がかかっている繰り返し作業をAIで自動化したい」という相談に対し、小さく試作して素早く動くものを出すスタイルで進めます。
-    </p>
+    <p class="lead">Webエンジニアとして約3年8ヶ月、PHP・Laravel・JavaScript・MySQLを使った業務システムの開発・保守を担当しました。社内約5名・クライアント側約5名の体制で、仕様の確認から設計・実装・テスト・運用保守まで一通り対応し、既存システムの仕様調査や不具合の原因切り分け、影響範囲を確認したうえでの改修を積み重ねてきました。</p>
+    <p class="lead">現在は Claude Code・Codex・ローカルLLM（Ollama）・n8n を使い、AIエージェントや業務自動化の仕組みを自分で作って毎日運用しています。AIに任せる部分と人が確認する部分を分け、動くものを小さく作って改善していく進め方を大事にしています。既存サービスで対応できることと、追加の開発が必要なことを整理し、目的に合う方法を一緒に考えます。</p>
   </section>
 
-  <section class="section" id="career">
-    <h2>職歴・学歴</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <p class="timeline-date">2025年5月 〜 現在</p>
-        <h3>個人開発・自主検証（業務自動化・AIエージェント）</h3>
-        <p>Playwrightによるブラウザ操作自動化、Python×AIエージェント（Claude API・Ollama）連携の業務フロー自動化、n8nでの通知・定期処理・Gmail連携ワークフロー構築、Notion/Obsidianでのナレッジ・タスク管理基盤構築などを実施。</p>
-      </div>
-      <div class="timeline-item">
-        <p class="timeline-date">2021年9月 〜 2025年5月</p>
-        <h3>株式会社アドグローブ｜システムエンジニア</h3>
-        <p>社内約5名・クライアント側約5名の体制で、PHP/Laravelを中心としたWebアプリケーションの開発・保守を担当。要件・仕様確認、設計、実装、テスト、運用保守まで一貫して対応し、既存コードの調査、影響範囲の整理、不具合の原因切り分け、安全な改修を経験。Gitによるソース管理・コードレビューにも従事。</p>
-      </div>
-      <div class="timeline-item">
-        <p class="timeline-date">2017年4月 〜 2021年3月</p>
-        <h3>専門学校 HAL大阪｜高度情報学科 WEB開発コース</h3>
-        <p>Web開発の基礎から応用までを専門的に学習し卒業。</p>
-      </div>
+  <section class="section" id="strengths">
+    <h2>強み</h2>
+    <div class="cards cards-3">
+      <article class="card">
+        <h3>既存システムを壊さない改修</h3>
+        <p>運用中サービスの仕様調査・影響範囲の整理・原因の切り分けを行い、安全に改修する経験を積んできました。</p>
+      </article>
+      <article class="card">
+        <h3>AIを作業の流れに組み込む</h3>
+        <p>個人開発では、情報収集・一次判定・下書き・記録をつなぐ仕組みを構築。AIの出力を確認しながら日々の作業に使っています。</p>
+      </article>
+      <article class="card">
+        <h3>人が最終判断する安全な設計</h3>
+        <p>送信や金額などの重要な操作は人が確認する設計にし、失敗しにくい作りと手順書をセットで用意します。</p>
+      </article>
     </div>
   </section>
 
+  <section class="section" id="services">
+    <h2>ご相談できること</h2>
+    <p class="lead">業務の整理から、調査・小さな試作・必要な改修まで。目的と予算に合わせて、対応範囲を決めて進めます。</p>
+    <div class="cards cards-3">
+      <article class="card">
+        <p class="service-number">01 / 調べる・整理する</p>
+        <h3>技術・ツールの比較調査</h3>
+        <p>候補の機能・料金・利用条件を調べ、既存サービスの利用と開発の選択肢を整理します。</p>
+        <p class="card-label">お渡しするものの例</p>
+        <p>比較表、費用の前提、確認事項、次の検証案。</p>
+      </article>
+      <article class="card">
+        <p class="service-number">02 / つなぐ・試す</p>
+        <h3>AI・自動化の小さな試作</h3>
+        <p>個人開発で培ったPython・n8n・API連携の知見を活かし、情報整理・下書き・通知などの検証をご相談いただけます。</p>
+        <p class="card-label">お渡しするものの例</p>
+        <p>対象業務を絞った試作品、設定・操作手順、検証結果。</p>
+      </article>
+      <article class="card">
+        <p class="service-number">03 / 直す・改善する</p>
+        <h3>Webシステムの調査・改修</h3>
+        <p>PHP・Laravelの実務経験をもとに、既存コードの調査、機能追加、不具合修正、画面やフォームの改善に対応します。</p>
+        <p class="card-label">お渡しするものの例</p>
+        <p>調査結果、改修コード、テスト結果、運用手順。</p>
+      </article>
+    </div>
+    <p class="scope-note">AI・自動化の紹介事例は個人開発・自主検証です。企業への導入では、権限・データの扱い・利用条件を確認し、まず小さな範囲で動作を確かめます。</p>
+  </section>
+
   <section class="section" id="works">
-    <h2>実績</h2>
+    <h2>実績・制作事例</h2>
+    <p class="lead">会社員時代の業務経験と、個人開発・自主検証を分けて紹介します。</p>
 
     <h3 class="subsection">業務での実績（会社員時代）</h3>
-    <p class="lead" style="margin-bottom:24px;">守秘義務のため企業名・商品名は伏せています。</p>
+    <p class="note">守秘義務のため、企業名・サービス名は伏せています。</p>
     <div class="cards">
 
       <article class="card">
-        <h3>人材サービス系求人サイトの保守・改修・テスト</h3>
+        <h3>人材サービス系求人サイトの保守・改修</h3>
         <p class="card-label">課題</p>
-        <p>運用中の大手求人サイトで、既存仕様を壊さずに機能改修・不具合対応を進める必要があった。</p>
+        <p>運用中の大規模な求人サイトで、既存の仕様を壊さずに機能改修や不具合対応を進める必要があった。</p>
         <p class="card-label">やったこと</p>
-        <p>既存コードの仕様調査・影響範囲整理、PHP/Laravelでの改修対応、テストまで一貫して担当。</p>
+        <p>既存コードの仕様調査と影響範囲の整理を行ったうえで、PHP/Laravelでの改修からテストまでを担当。</p>
         <p class="card-label">結果</p>
-        <p>安定運用を継続しながら機能改修を実施。</p>
+        <p>運用中サービスの機能改修・不具合対応を継続して担当。</p>
+        <ul class="stack">
+          <li>PHP</li><li>Laravel</li><li>MySQL</li><li>JavaScript</li><li>Git</li>
+        </ul>
       </article>
 
       <article class="card">
-        <h3>人気キャラクターコラボECサイト構築</h3>
+        <h3>キャラクターコラボECサイトの構築</h3>
         <p class="card-label">課題</p>
-        <p>人気キャラクターとのコラボ商品を販売するECサイトを新規構築する必要があった。</p>
+        <p>人気キャラクターとのコラボ商品を販売するECサイトを新しく立ち上げる必要があった。</p>
         <p class="card-label">やったこと</p>
-        <p>Shopifyを用いたECサイトの構築を担当。</p>
+        <p>Shopifyを使ったECサイトの構築を担当。</p>
         <p class="card-label">結果</p>
-        <p>商品販売サイトを立ち上げ、運用に乗せた。</p>
+        <p>販売サイトを公開し、運用を開始。</p>
+        <ul class="stack">
+          <li>Shopify</li><li>HTML / CSS</li><li>JavaScript</li>
+        </ul>
       </article>
 
       <article class="card">
@@ -105,22 +146,65 @@
         <p class="card-label">やったこと</p>
         <p>グッズ販売サイトの構築を担当。</p>
         <p class="card-label">結果</p>
-        <p>グッズ販売サイトを公開し、運用に乗せた。</p>
+        <p>販売サイトを公開し、運用を開始。</p>
       </article>
 
     </div>
 
-    <h3 class="subsection">個人開発</h3>
-    <div class="cards">
+    <h3 class="subsection">個人開発（AI・自動化）</h3>
+    <div class="cards cards-2">
 
       <article class="card">
-        <h3>営業支援AIエージェント（eigyo-agent）</h3>
+        <h3>営業支援AIエージェント</h3>
         <p class="card-label">課題</p>
-        <p>案件探し・応募文作成・進捗管理を手作業でやると時間がかかり、応募数が伸びない。</p>
+        <p>案件探し・条件確認・応募文作成を手作業で行うと時間がかかり、応募数が伸びない。</p>
         <p class="card-label">やったこと</p>
-        <p>案件情報の収集、条件判定、ローカルAI採点、提案文の下書き、人間確認、履歴保存をつなぐ営業支援システムを自作。</p>
+        <ul class="card-list">
+          <li>案件候補を自動収集し、ローカルLLMで一次判定</li>
+          <li>候補の本文から稼働時間・出社要否・報酬・募集状況・応募済みかを確認し、条件に合わない候補を除外</li>
+          <li>応募文の下書きをAIで作成。AIが使えない場合は別モデル→人の順に切り替え</li>
+          <li>重複処理の防止・ログ保存・途中から再開できる構成</li>
+        </ul>
         <p class="card-label">結果</p>
-        <p>候補精査と提案文作成の時間を短縮。外部送信は自動化せず、人が確認して実行する安全設計で継続運用。</p>
+        <p>候補の選別と下書き作成の手間を減らし、送信は人が確認してから行う形で日次運用中。</p>
+        <ul class="stack">
+          <li>Python</li><li>Playwright</li><li>Ollama</li><li>Codex</li><li>Claude Code</li><li>PowerShell</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>個人用AI開発基盤</h3>
+        <p class="card-label">課題</p>
+        <p>AIとの作業内容が会話ごとに途切れ、記録や引き継ぎ、定期的な情報収集に手間がかかる。</p>
+        <p class="card-label">やったこと</p>
+        <ul class="card-list">
+          <li>Claude Code＋MCP＋フック＋Obsidianで、作業記録と引き継ぎを自動化</li>
+          <li>自作MCPサーバー（読み取り専用）をOpenAPI化し、Open WebUIのローカルAIから利用</li>
+          <li>Claude Codeのヘッドレス実行で、ニュース収集→Notion記録を定期実行</li>
+          <li>Node.js製の管理画面で、Docker上の各サービスの状態確認・一括起動／停止</li>
+        </ul>
+        <p class="card-label">結果</p>
+        <p>作業の記録・通知・情報収集が自動で回る環境を作り、毎日の開発で使っている。</p>
+        <ul class="stack">
+          <li>Claude Code</li><li>MCP</li><li>n8n</li><li>Node.js</li><li>Docker</li><li>Notion API</li><li>Telegram Bot</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>自宅AIサーバー（使っていないPCの再活用）</h3>
+        <p class="card-label">課題</p>
+        <p>AI関連の常駐サービスでメインPCのメモリが不足し、作業に支障が出ていた。</p>
+        <p class="card-label">やったこと</p>
+        <ul class="card-list">
+          <li>使っていないPCにUbuntuを入れ、VPN（Tailscale）内だけで使えるサーバーとして構築</li>
+          <li>Docker上でナレッジ検索（RAG）・ローカルLLM・n8n・写真管理を稼働</li>
+          <li>Obsidianのメモを毎日同期し、意味で検索できるようにした</li>
+        </ul>
+        <p class="card-label">結果</p>
+        <p>重い処理をサーバー側へ移してメインPCの負荷を下げ、蓄積した知見をAIから検索できるようになった。</p>
+        <ul class="stack">
+          <li>Ubuntu</li><li>Docker</li><li>Tailscale</li><li>Khoj</li><li>Ollama</li><li>Open WebUI</li>
+        </ul>
       </article>
 
       <article class="card">
@@ -128,62 +212,93 @@
         <p class="card-label">課題</p>
         <p>動画コンテンツを快適に閲覧・整理できるツールが欲しかった。</p>
         <p class="card-label">やったこと</p>
-        <p>React / Zustandで状態管理を行うフロントエンドを構築し、YouTube IFrame APIとの連携やモバイル対応を実装。</p>
+        <p>YouTube動画を最大5視点で同期再生するWebアプリを制作。React / Zustandによる状態管理、再生位置の同期、URL共有、モバイル対応を実装し、Playwrightによる動作テストを整備。</p>
         <p class="card-label">結果</p>
-        <p>PC・モバイル双方で安定動作するビューアを完成させ、実運用中。</p>
+        <p>PC・モバイルの両方で動作するビューアとして公開。</p>
+        <ul class="stack">
+          <li>React</li><li>Zustand</li><li>YouTube IFrame API</li><li>Playwright</li>
+        </ul>
+        <a class="card-link" href="https://tasuku1215.github.io/dbd-viewer/" target="_blank" rel="noopener noreferrer">公開アプリを開く →</a>
+        <a class="card-link" href="https://github.com/tasuku1215/dbd-viewer" target="_blank" rel="noopener noreferrer">GitHubでソースを見る →</a>
       </article>
 
-      <article class="card">
-        <h3>VRCアバター改変</h3>
-        <p class="card-label">課題</p>
-        <p>既製アバター（Manuka）を、要望に合わせた見た目・ギミックにカスタマイズしたい。</p>
-        <p class="card-label">やったこと</p>
-        <p>Unity上でのシェーダー調整、ギミック追加、Write Defaults混在によるレイトジョイナー不具合の原因特定と修正などを実施。</p>
-        <p class="card-label">結果</p>
-        <p>安定して動作するオリジナル改変アバターを完成・運用。</p>
-      </article>
+    </div>
 
+  </section>
+
+  <section class="section" id="career">
+    <h2>経歴</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <p class="timeline-date">2025年5月 〜 現在</p>
+        <h3>個人開発・自主検証（AI活用・業務自動化）</h3>
+        <p>AIエージェント・ローカルLLM・自動化基盤を自分で開発し、日々の作業に活用。情報収集・下書き・記録などを、人が確認する工程と組み合わせて検証しています。</p>
+      </div>
+      <div class="timeline-item">
+        <p class="timeline-date">2021年9月 〜 2025年5月</p>
+        <h3>株式会社アドグローブ｜システムエンジニア</h3>
+        <p>PHP/Laravelを中心としたWebアプリケーションの開発・保守を担当。仕様確認・設計・実装・テスト・運用保守まで対応し、既存コードの調査、影響範囲の整理、不具合の原因切り分け、Gitでのソース管理・コードレビューを経験。</p>
+      </div>
+      <div class="timeline-item">
+        <p class="timeline-date">2017年4月 〜 2021年3月</p>
+        <h3>専門学校 HAL大阪｜高度情報学科 WEB開発コース</h3>
+        <p>Web開発の基礎から応用までを学び卒業。</p>
+      </div>
     </div>
   </section>
 
   <section class="section" id="skills">
-    <h2>スキル</h2>
-    <ul class="tags">
-      <li>PHP / Laravel</li>
-      <li>JavaScript / jQuery</li>
-      <li>HTML / CSS</li>
-      <li>MySQL / SQL</li>
-      <li>Python</li>
-      <li>Playwright</li>
-      <li>Claude Code / ChatGPT / n8n</li>
-      <li>React / Zustand</li>
-      <li>Git / GitHub / Docker</li>
-      <li>Notion / Obsidian運用設計</li>
-      <li>Unity / VRChat改変</li>
-    </ul>
-  </section>
-
-  <section class="section" id="conditions">
-    <h2>資格・希望条件</h2>
-    <ul class="tags">
-      <li>ITパスポート</li>
-      <li>基本情報技術者試験</li>
-    </ul>
-    <p class="lead" style="margin-top:20px;">
-      希望する働き方：正社員／フルタイム／初日・研修を含む日本国内完全フルリモート。PHP・Laravelの経験を生かしながら、AI活用や新しい技術にも挑戦し、チームとプロダクトへ長期的に貢献できる環境を希望しています。
-    </p>
+    <h2>スキル・資格</h2>
+    <dl class="skill-groups">
+      <div>
+        <dt>実務で使用</dt>
+        <dd>
+          <ul class="tags">
+            <li>PHP / Laravel</li><li>JavaScript / jQuery</li><li>HTML / CSS</li><li>MySQL / SQL</li><li>Shopify</li><li>Git / GitHub</li>
+          </ul>
+        </dd>
+      </div>
+      <div>
+        <dt>AI・自動化（個人開発・自主検証）</dt>
+        <dd>
+          <ul class="tags">
+            <li>Claude Code</li><li>Codex CLI</li><li>MCP</li><li>Ollama（ローカルLLM）</li><li>RAG（Khoj）</li><li>n8n</li><li>ChatGPT</li>
+          </ul>
+        </dd>
+      </div>
+      <div>
+        <dt>個人開発で使用</dt>
+        <dd>
+          <ul class="tags">
+            <li>Python</li><li>Playwright</li><li>Node.js</li><li>React / Zustand</li><li>Docker</li><li>Ubuntu / Linux</li><li>PowerShell</li><li>Notion API</li>
+          </ul>
+        </dd>
+      </div>
+      <div>
+        <dt>資格</dt>
+        <dd>
+          <ul class="tags">
+            <li>基本情報技術者試験</li><li>ITパスポート</li>
+          </ul>
+        </dd>
+      </div>
+    </dl>
   </section>
 
   <section class="section" id="contact">
     <h2>連絡先</h2>
-    <p>お仕事のご相談はこちらまでお気軽にどうぞ。</p>
-    <a class="btn" href="mailto:tasuku1215mhg@gmail.com">tasuku1215mhg@gmail.com</a>
+    <p class="lead">調査・試作・Web開発のご相談を承っています。「困っている作業」「現在のツール」「希望する時期」をお知らせください。対応範囲と進め方を確認します。</p>
+    <div class="actions actions-left">
+      <a class="btn" href="mailto:tasuku1215mhg@gmail.com">tasuku1215mhg@gmail.com</a>
+      <a class="btn btn-secondary" href="https://github.com/tasuku1215" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
   </section>
 
 </main>
 
 <footer>
-  <p>&copy; 2026 Hosomi Tasuku. All rights reserved.</p>
+  <p>最終更新：2026年10月15日</p>
+  <p>&copy; 2026 Hosomi Tasuku</p>
 </footer>
 
 </body>
